@@ -49,6 +49,7 @@ button {
 }
 
 input {
+	width: 100%;
 	background: var(--couleur-surface);
 	color: var(--couleur-texte);
 }
@@ -118,6 +119,10 @@ dialog::backdrop {
 	.recherche h2,
 	.recherche label,
 	.recherche #statut-resultats {
+		grid-column: 1 / -1;
+	}
+
+	.recherche #recherche-pays {
 		grid-column: 1 / -1;
 	}
 }

@@ -23,10 +23,12 @@
                 <input id="recherche-pays" type="text" placeholder="Rechercher..." />
                 <label for="filtre-region">Filtrer par région</label>
                 <select id="filtre-region">
+                    <option value="Europe" selected>Europe</option>
                     <option value="">Toutes les régions</option>
                 </select>
                 <button>Rechercher</button>
                 <p id="statut-resultats" role="status" aria-live="polite"></p>
+                <button id="reessayer" type="button" hidden>Réessayer</button>
             </section>
             <section class="resultats">
                 <h2>Résultats de la Recherche</h2>
