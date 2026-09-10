@@ -1,0 +1,29 @@
+:root {
+	--couleur-fond: #f4f7fb;
+	--couleur-surface: #ffffff;
+	--couleur-texte: #172033;
+	--couleur-texte-secondaire: #526078;
+	--couleur-accent: #005fcc;
+	--couleur-accent-contrast: #ffffff;
+	--couleur-bordure: #d7deea;
+	--couleur-focus: #ffb000;
+	--rayon: 0.75rem;
+	--espacement: 1rem;
+	--espacement-large: 2rem;
+	--ombre: 0 0.5rem 1.5rem rgba(23, 32, 51, 0.1);
+	--largeur-contenu: 70rem;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--couleur-fond: #121722;
+		--couleur-surface: #1d2635;
+		--couleur-texte: #f3f6fb;
+		--couleur-texte-secondaire: #c2ccdc;
+		--couleur-accent: #78b7ff;
+		--couleur-accent-contrast: #101a29;
+		--couleur-bordure: #405069;
+		--couleur-focus: #ffd166;
+		--ombre: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+	}
+}
