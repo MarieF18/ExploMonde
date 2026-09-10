@@ -21,34 +21,29 @@
                 <h2>Champs de Recherche</h2>
                 <label for="recherche-pays">Rechercher un pays</label>
                 <input id="recherche-pays" type="text" placeholder="Rechercher..." />
+                <label for="filtre-region">Filtrer par région</label>
+                <select id="filtre-region">
+                    <option value="">Toutes les régions</option>
+                </select>
                 <button>Rechercher</button>
                 <p id="statut-resultats" role="status" aria-live="polite"></p>
             </section>
             <section class="resultats">
                 <h2>Résultats de la Recherche</h2>
-                <article class="pays">
-                    <h3 class="nomPays">France</h3>
-                    <p class="capitale">Capitale: Paris</p>
-                    <p class="region">Région: Europe de l'ouest</p>
-                    <p class="population">Population: 2,160,801</p >
-                </article>
-                <article class="pays">
-                    <h3 class="nomPays">Italie</h3>
-                    <p class="capitale">Capitale: Rome</p>
-                    <p class="region">Région: Europe du sud</p>
-                    <p class="population">Population: 5,894,826</p>
-                </article>
-                <article class="pays">
-                    <h3 class="nomPays">Norvège</h3>
-                    <p class="capitale">Capitale: Oslo</p>
-                    <p class="region">Région: Europe du nord</p>
-                    <p class="population">Population: 5,421,241</p>
-                </article>
+                <div id="cartes-pays"></div>
             </section>
         </main>
 
         <footer>
-            <p>&copy; 2026 ExploMonde. Tous droits réservés.</p>
+            <p>&copy; 2026 ExploMonde. Marie Fiette.</p>
         </footer>
+        <dialog id="detail-pays">
+            <h2 id="titre-detail"></h2>
+            <div id="contenu-detail"></div>
+            <form method="dialog">
+                <button>Fermer</button>
+            </form>
+        </dialog>
+        <script type="module" src="js/main.js"></script>
     </body>
 </html>
